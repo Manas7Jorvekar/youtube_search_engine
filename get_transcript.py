@@ -39,8 +39,8 @@ if __name__ == '__main__':
             documents.append(preprocessed_text)
 
             i = i + 1
-            if i > 10:
-                break
+            # if i > 10:
+            #     break
         except:
             print("Subtitles are turned off")
         print("")
