@@ -24,11 +24,12 @@ def preprocess_text(text):
     return tokens
 
 if __name__ == '__main__':
-    in_videos_path = "C:/Users/jorve/Desktop/SEM-6/DSci/youtube_search_engine/trending_videos/USvideos.csv"
+    in_videos_path = "./trending_videos/USvideos.csv"
     in_df = pd.read_csv(in_videos_path)
 
     # Extracting transcripts and preprocessing 
     documents = []
+    documents_directory = []
     i = 0
     for vid in in_df['video_id']:
         print(vid)
